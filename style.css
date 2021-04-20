@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Milliard Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local("font/Milliard Book"), url("font/Rene Bieder  Milliard Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Milliard Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("font/Milliard Light"), url("font/Rene Bieder  Milliard Light.woff") format("woff");
+}
+
+body {
+  font-family: Milliard Book !important;
+  color: #2E4765 !important;
+  font-size: 13px !important;
+}
+
+.nav__logo {
+  font-family: Milliard Light !important;
+  color: #EF4C00 !important;
+  font-size: 23px !important;
+}
+
+.nav__menu--active, .nav__menu:hover {
+  border-bottom: 3px solid #EF4C00;
+}
+
+.nav__items {
+  padding: 3px 10px;
+  background-color: #EF4C00;
+  text-decoration: none;
+  color: white;
+}
+
+.nav__items:hover {
+  background-color: white;
+  color: #EF4C00;
+}
+
+.nav__items .bi-cart {
+  font-size: 25px;
+}
+
+.article__section {
+  margin: 0 auto;
+  position: relative;
+  height: 100px;
+  width: 780px;
+  max-width: 100%;
+}
+
+.article__quote:before {
+  padding-right: 20px;
+}
+
+.article__quote:after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.article__sub {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  right: 28px;
+}
+
+.article__strong {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #EF4C00;
+}
+
+.banner {
+  color: #fff !important;
+}
+
+.banner__wallpaper {
+  background: url(images/10882.png) no-repeat;
+  background-size: cover;
+  height: 366px;
+}
+
+.banner__content {
+  width: 350px;
+  margin-left: 85px;
+}
+
+.banner__content h1 {
+  line-height: 60px;
+  padding-bottom: 20px;
+}
+
+.banner__market {
+  text-decoration: none;
+  background-color: #FF0043;
+  color: #fff;
+  width: 153px;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding: 5px 5px 5px 48px;
+  font-size: 11px;
+}
+
+.banner__market:hover {
+  background-color: #B30733;
+  color: #fff;
+}
+
+.banner__market span {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.banner__market i {
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 10px;
+}
+/*# sourceMappingURL=style.css.map */
