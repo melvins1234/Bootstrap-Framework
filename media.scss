@@ -20,6 +20,25 @@
         &__cart{
             align-items: flex-start !important;
         }
+
+        .border-bottom{
+            border-bottom: 0 !important;
+        }
+
+        .border-end{
+            border: 0 !important;
+        }
+
+        &__menu{
+            margin-bottom: 5px !important;
+            &:last-child {
+                padding: 0 !important;
+            }
+        }
+
+        &__cart{
+            margin-top: 10px !important;
+        }
     }
 
     .banner{
@@ -65,24 +84,9 @@
         &__cart{
             justify-content: end !important;
         }
-        .border-bottom{
-            border-bottom: 0 !important;
-        }
 
-        .border-end{
-            border: 0 !important;
-        }
 
-        &__menu{
-            margin-bottom: 5px !important;
-            &:last-child {
-                padding: 0 !important;
-            }
-        }
-
-        &__cart{
-            margin-top: 10px !important;
-        }
+ 
     }
 
     .banner{
