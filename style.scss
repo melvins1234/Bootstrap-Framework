@@ -12,9 +12,23 @@
     src: local('font/Milliard Light'), url('font/Rene Bieder  Milliard Light.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Milliard Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('font/Milliard Bold'), url('font/Rene Bieder  Milliard Bold.woff') format('woff');
+}
+
 $colorOrange: #EF4C00;
 $colorBlue: #2E4765;
 $colorRed: #FF0043;
+$colorDarkRed: #B30733;
+$colorDirtyWhite: #F4F9FF;
+
+@mixin absoluteZero {
+    position: absolute;
+    bottom: 0;
+}
 
 body{
     font-family: Milliard Book !important;
@@ -31,10 +45,28 @@ body{
     }
 
     &__menu{
-        
-        &--active, &:hover{
-            border-bottom: 3px solid $colorOrange;
+        position: relative;
+
+        &--active , &:not(:last-child):hover{
+            &:after{
+                content: "";
+                border-bottom: 3px solid $colorOrange;
+                @include absoluteZero;
+                width: 100%;
+                bottom: -16px;
+                left: 0;
+                border-radius: 65px;
+            }
         }
+
+        &:last-child{
+            padding: 0 0 0 20px !important;
+
+            img{
+                width: 30px;
+            }
+        }
+        
     }
 
     &__items{
@@ -69,16 +101,14 @@ body{
             padding-right: 20px;
         }
         &:after{
-            position: absolute;
-            bottom: 0;
+            @include absoluteZero;
             right: 0;
         } 
     }
 
     &__sub{
-        position: absolute;
+        @include absoluteZero;
         display: block;
-        bottom: 0;
         right: 28px;
     }
 
@@ -116,11 +146,12 @@ body{
         display: inline-block;
         vertical-align: middle;
         position: relative;
-        padding: 5px 5px 5px 48px;
+        padding: 10px 5px 15px 48px;
         font-size: 11px;
+        line-height: 14px;
 
-        &:hover{
-            background-color: #B30733;
+        &--active, &:hover{
+            background-color: $colorDarkRed;
             color: #fff;
         }
 
@@ -137,5 +168,218 @@ body{
             transform: translateY(-50%);
             left: 10px;
         }
+    }
+}
+
+@mixin titleText {
+    text-transform: uppercase;
+    color: $colorDarkRed;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.middle{
+    &__text{
+        @include titleText();
+    }
+
+    &__search{
+        background-color: $colorDirtyWhite !important;
+        font-size: 13px !important;
+        &:after{
+            content: "\f002";
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__input{
+        position: relative;
+        flex: 1 1 auto;
+        width: 1%;
+        min-width: 0;
+    }
+
+    &__icon{
+
+        &--search{
+            color: $colorDarkRed;
+            font-size: 20px;
+            position: absolute;
+            z-index: 1;
+            right: 20px;
+            top: 2px;
+        }
+
+        &--sliders{
+            background-color: $colorOrange;
+            color: #fff;
+            font-size: 22px;
+            width: 37px;
+            height: 35px;
+            padding: 1px 0 0 0;
+            text-align: center;
+        }
+    }
+}
+
+.bottom1{
+    &__categories{
+        text-decoration: none;
+        background-color: $colorDirtyWhite !important;
+        color: inherit !important;
+        cursor: pointer;
+        position: relative;
+
+        &--active, &:hover{
+            color: #fff !important;
+            background-color: $colorOrange !important;                      
+        }
+
+        &:nth-child(2)  {
+            .bottom1__categories--icon::before{
+                 background-image: url(images/pancakes.png);
+             }
+
+             &:hover .bottom1__categories--icon::before{
+                background-image: url(images/pancakes_hover.png);
+            }
+         }
+        &:nth-child(3){
+            .bottom1__categories--icon::before{
+                background-image: url(images/dish.png);
+            }
+
+            &:hover .bottom1__categories--icon::before{
+                background-image: url(images/dish_hover.png);
+            }
+        }
+        &:nth-child(4){
+            .bottom1__categories--icon::before{
+                background-image: url(images/sparkling-water.png);
+            }
+
+            &:hover .bottom1__categories--icon::before{
+                background-image: url(images/sparkling-water_hover.png);
+            }
+        }
+        &:nth-child(5){
+            .bottom1__categories--icon::before{
+                background-image: url(images/dessert.png);
+            }
+
+            &:hover .bottom1__categories--icon::before{
+                background-image: url(images/dessert_hover.png);
+            }
+        }
+        &:nth-child(6){
+            .bottom1__categories--icon::before{
+                background-image: url(images/hamburger.png);
+            }
+
+            &:hover .bottom1__categories--icon::before{
+                background-image: url(images/hamburger_hover.png);
+            }
+        }
+
+
+
+        &--icon{
+            padding-left: 37px;
+    
+            &:before{
+                content: "";
+                width: 30px;
+                height: 30px;
+                display: block;
+                background-size: contain !important;
+                position: absolute;
+                top: 3px;
+                background-repeat: no-repeat;
+                background-position-x: center;
+                background-position-y: center;
+            }
+
+        }
+    }
+
+    
+    
+}
+
+.bottom2{
+    &__food{
+        border-radius: 40px;
+        overflow: hidden;
+    }
+    &__card{
+        height: 300px;
+        border-radius: 20px !important;
+    }
+    &__image{
+        position: absolute;
+        border-radius: 20px !important;
+        &--holder{
+            display: inline-block;
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            border-radius: 50%;
+            background: $colorRed;
+            top: -43px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    &__body{
+        flex: unset !important;
+        z-index: 1;
+        background: #fff;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        border-radius: 0 0 20px 20px !important;
+    }
+
+    &__title{
+        color: $colorRed;
+        font-size: 15px;
+        display: block;
+        position: relative;
+        i{
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            
+        }
+    }
+
+    &__text{
+        color: $colorOrange;
+        i:last-of-type{
+            opacity: .5;
+        }
+        span{
+            color: $colorBlue;
+            padding-left: 15px;
+        }
+    }
+
+    &__button{
+        text-decoration: none;
+        color: $colorBlue;
+        border-radius: 20px;
+        font-size: 10px;
+        background: $colorDirtyWhite;
+        padding: 5px 7px;
+        display: block;
+    }
+}
+
+.bottom3{
+    &__text{
+        @include titleText();
     }
 }

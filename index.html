@@ -18,7 +18,7 @@
   <header class="nav pt-4">
     <div class="container border-bottom">
       <div class="row">
-        <div class="col-md-9 border-end">
+        <div class="col-md-10 border-end">
           <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
               <a class="navbar-brand nav__logo" href="#">RAKUTEN FRESH</a>
@@ -29,17 +29,19 @@
               </button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link nav__menu--active mx-2" aria-current="page" href="#">Find</a>
+                  <a class="nav-link nav__menu nav__menu--active mx-2" aria-current="page" href="#">Find</a>
                   <a class="nav-link nav__menu ml-5 mx-2" href="#">About Us</a>
                   <a class="nav-link nav__menu ml-5 mx-2" href="#">How It Works</a>
                   <a class="nav-link nav__menu ml-5 mx-2" href="#">Plans</a>
                   <a class="nav-link nav__menu ml-5 mx-2" href="#">Contact Us</a>
+                  <a class="nav-link nav__menu ml-5 mx-2" href="#"><img class="rounded-circle" src="images/user.png"
+                      alt=""></a>
                 </div>
               </div>
             </div>
           </nav>
         </div>
-        <div class="col-md-3 d-flex align-items-center">
+        <div class="col-md-2 d-flex align-items-center">
           <a href="#" class="nav__items rounded-pill d-inline-flex align-items-center"><i
               class="bi bi-cart pe-2"></i>(5) Items</a>
         </div>
@@ -59,26 +61,279 @@
     </div>
   </article>
 
-  <section class="banner">
+  <section class="banner mb-4">
     <div class="container">
       <section class="banner__wallpaper d-flex rounded-3 align-items-center">
         <section class="banner__content">
           <h1>Find Healthy And Favourite Foods Near You</h1>
-          <a href="#" class="banner__market rounded-3 mx-2"><i class="fab fa-apple"></i>Download on the <span
-              class="banner__market--strong">App Store</span></a>
+          <a href="#" class="banner__market banner__market--active rounded-3 mx-2"><i class="fab fa-apple"></i>Download
+            on the <span class="banner__market--strong">App Store</span></a>
           <a href="#" class="banner__market rounded-3 mx-2"><i class="fab fa-google-play"></i>Get it on <span
               class="banner__market--strong">Google Play</span></a>
         </section>
       </section>
     </div>
   </section>
-  
 
-  <section class="middle">
+
+  <section class="middle mb-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-6"><span>Our Meal</span></div>
-        <div class="col-md-6"></div>
+        <div class="col-md-8"><span class="middle__text">Our Meals</span></div>
+        <div class="col-md-4">
+          <div class="input-group flex-nowrap">
+            <div class="middle__input">
+              <input type="text" class="form-control middle__search rounded-pill border-0 ps-4"
+                placeholder="Search by name">
+              <span class="middle__icon middle__icon--search"><i class="fas fa-search"></i></span>
+            </div>
+            <span class="middle__icon middle__icon--sliders rounded-circle ms-3"><i class="bi bi-sliders"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bottom1 mb-4">
+    <div class="container">
+      <div class="d-flex flex-row">
+        <a class="px-3 py-2 mx-2 rounded-pill bottom1__categories  bottom1__categories--active">All (170)</a>
+        <a class="px-3 py-2 mx-2 rounded-pill bottom1__categories "><span class="bottom1__categories--icon">Breakfast
+            (23)</span></a>
+        <a class="px-3 py-2 mx-2 rounded-pill bottom1__categories "><span class="bottom1__categories--icon">Lunch
+            (41)</span></a>
+        <a class="px-3 py-2 mx-2 rounded-pill bottom1__categories "><span class="bottom1__categories--icon">Drinks
+            (53)</span></a>
+        <a class="px-3 py-2 mx-2 rounded-pill bottom1__categories "><span class="bottom1__categories--icon">Desserts
+            (33)</span></a>
+        <a class="px-3 py-2 mx-2 rounded-pill bottom1__categories "><span class="bottom1__categories--icon">Fastfood
+            (20)</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bottom2 mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 bottom2__food">
+          <div class="card bottom2__card">
+            <img src="images/food_image1.png" class="card-img-top bottom2__image" alt="...">
+            
+            <div class="card-body bottom2__body">
+              <span class="bottom2__image--holder">
+                <img src="images/dish_hover.png" alt="">
+              </span>
+              <h5 class="card-title bottom2__title">Pakistani Chicken Platter <i class="fas fa-heart"></i></h5>
+              <p class="card-text bottom2__text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>32 Reviews</span>
+              </p>
+              <footer class="bottom2__footer">
+                <div class="">
+                  <div class="row align-items-start">
+                    <div class="col-sm-3 text-center">
+                      <a href="#" class="bottom2__button">Indian</a>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <a href="#" class="bottom2__button">Pakistani</a>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <i class="far fa-clock"></i> 20-30
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 bottom2__food">
+          <div class="card bottom2__card">
+            <img src="images/food_image2.png" class="card-img-top bottom2__image" alt="...">
+            <div class="card-body bottom2__body">
+              <span class="bottom2__image--holder">
+                <img src="images/dish_hover.png" alt="">
+              </span>
+              <h5 class="card-title bottom2__title">Risotto <i class="far fa-heart"></i></h5>
+              <p class="card-text bottom2__text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>20 Reviews</span>
+              </p>
+              <footer class="bottom2__footer">
+                <div class="">
+                  <div class="row align-items-start">
+                    <div class="col-sm-3 text-center">
+                      <a href="#" class="bottom2__button">Italian</a>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <a href="#" class="bottom2__button">Eurpeon</a>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <i class="far fa-clock"></i> 10-20
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 bottom2__food">
+          <div class="card bottom2__card">
+            <img src="images/food_image3.png" class="card-img-top bottom2__image" alt="...">
+            <div class="card-body bottom2__body">
+              <span class="bottom2__image--holder">
+                <img src="images/dessert_hover.png" alt="">
+              </span>
+              <h5 class="card-title bottom2__title">Maslenitca <i class="fas fa-heart"></i></h5>
+              <p class="card-text bottom2__text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>45 Reviews</span>
+              </p>
+              <footer class="bottom2__footer">
+                <div class="">
+                  <div class="row align-items-start">
+                    <div class="col-sm-3 text-center">
+                      <a href="#" class="bottom2__button">Russian</a>
+                    </div>
+                    <div class="col-md-9 text-end">
+                      <i class="far fa-clock"></i> 25-35
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bottom3 mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"><span class="bottom3__text">Popular</span></div>
+        <div class="col-sm-10"><hr /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bottom2 mb-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 bottom2__food">
+          <div class="card bottom2__card">
+            <img src="images/food_image4.png" class="card-img-top bottom2__image" alt="...">
+            
+            <div class="card-body bottom2__body">
+              <span class="bottom2__image--holder">
+                <img src="images/hamburger_hover.png" alt="">
+              </span>
+              <h5 class="card-title bottom2__title">Moussaka <i class="fas fa-heart"></i></h5>
+              <p class="card-text bottom2__text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>55 Reviews</span>
+              </p>
+              <footer class="bottom2__footer">
+                <div class="">
+                  <div class="row align-items-start">
+                    <div class="col-sm-3 text-center">
+                      <a href="#" class="bottom2__button">Italian</a>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <a href="#" class="bottom2__button">Greek</a>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <i class="far fa-clock"></i> 15-25
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 bottom2__food">
+          <div class="card bottom2__card">
+            <img src="images/food_image5.png" class="card-img-top bottom2__image" alt="...">
+            <div class="card-body bottom2__body">
+              <span class="bottom2__image--holder">
+                <img src="images/sparkling-water_hover.png" alt="">
+              </span>
+              <h5 class="card-title bottom2__title">Capuchino <i class="far fa-heart"></i></h5>
+              <p class="card-text bottom2__text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>72 Reviews</span>
+              </p>
+              <footer class="bottom2__footer">
+                <div class="">
+                  <div class="row align-items-start">
+                    <div class="col-sm-3 text-center">
+                      <a href="#" class="bottom2__button">American</a>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <a href="#" class="bottom2__button">Eurpeon</a>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <i class="far fa-clock"></i> 20-30
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 bottom2__food">
+          <div class="card bottom2__card">
+            <img src="images/food_image6.png" class="card-img-top bottom2__image" alt="...">
+            <div class="card-body bottom2__body">
+              <span class="bottom2__image--holder">
+                <img src="images/dish_hover.png" alt="">
+              </span>
+              <h5 class="card-title bottom2__title">Arabic Mandi <i class="fas fa-heart"></i></h5>
+              <p class="card-text bottom2__text">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>45 Reviews</span>
+              </p>
+              <footer class="bottom2__footer">
+                <div class="">
+                  <div class="row align-items-start">
+                    <div class="col-sm-3 text-center">
+                      <a href="#" class="bottom2__button">Arabic</a>
+                    </div>
+                    <div class="col-sm-3 text-center">
+                      <a href="#" class="bottom2__button">Turkish</a>
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <i class="far fa-clock"></i> 35-45
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
