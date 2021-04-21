@@ -318,6 +318,7 @@ body{
     &__card{
         height: 300px;
         border-radius: 20px !important;
+        overflow: hidden;
     }
     &__image{
         position: absolute;

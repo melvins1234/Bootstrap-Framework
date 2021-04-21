@@ -285,6 +285,7 @@ body {
 .bottom2__card {
   height: 300px;
   border-radius: 20px !important;
+  overflow: hidden;
 }
 
 .bottom2__image {
