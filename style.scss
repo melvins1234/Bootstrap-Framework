@@ -84,6 +84,10 @@ body{
             font-size: 25px;
         }
     }
+
+    &__cart{
+        align-items: center;
+    }
 }
 
 .article{
@@ -122,7 +126,7 @@ body{
 .banner{
     color: #fff !important;
     &__wallpaper{
-        background: url(images/10882.png) no-repeat;
+        background: url(images/10882.png) no-repeat center center;
         background-size: cover;
         height: 366px;
     }
@@ -375,6 +379,12 @@ body{
         background: $colorDirtyWhite;
         padding: 5px 7px;
         display: block;
+    }
+
+    &__footer{
+        .col-sm-3{
+            padding: 0 !important;
+        }
     }
 }
 

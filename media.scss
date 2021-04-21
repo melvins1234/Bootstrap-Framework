@@ -1,0 +1,151 @@
+@media screen and (max-width: 1199px) {
+    .bottom2{
+        &__card {
+            height: 275px;
+        }       
+    }
+}
+@media screen and (max-width: 991px) {
+    .nav{
+
+        &__menu{
+            &--active , &:not(:last-child):hover{
+                &:after{
+                    bottom: 0 !important;
+                }
+            }
+        }
+
+
+        &__cart{
+            align-items: flex-start !important;
+        }
+    }
+
+    .banner{
+        &__content{
+            margin-left: 55px;
+        }
+    }
+
+    .bottom1{
+        &__flex{
+            flex-wrap: wrap !important;
+        }
+
+        &__categories{
+            width: 30% !important;
+            margin-bottom: 10px !important;
+        }
+    }
+
+    .bottom2{
+        &__row{
+            display: block !important;
+            text-align: center;
+        }
+        &__food{
+            display: inline-block;
+            width: 49% !important;
+            text-align: left;
+        }
+
+        &__card{
+            margin-bottom: 15px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .nav{
+        &__logo{
+            font-size: 19px !important;
+        }
+        &__cart{
+            justify-content: end !important;
+        }
+        .border-bottom{
+            border-bottom: 0 !important;
+        }
+
+        .border-end{
+            border: 0 !important;
+        }
+
+        &__menu{
+            margin-bottom: 5px !important;
+            &:last-child {
+                padding: 0 !important;
+            }
+        }
+
+        &__cart{
+            margin-top: 10px !important;
+        }
+    }
+
+    .banner{
+        &__content{
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 0 10px;
+
+            h1{
+                font-size: 28px;
+                line-height: 46px;
+            }
+        }
+        &__market{
+            margin-bottom: 5px;
+        }
+    }
+
+    .middle{
+        .col-md-5{
+            margin-top: 10px;
+        }
+    }
+
+    .bottom1{
+        &__categories {
+            width: 46% !important;
+            margin-bottom: 10px !important;
+
+            &--icon{
+                padding-left: 50px;
+            }
+        }
+    }
+
+    .bottom2{
+        &__card {
+            height: 240px;
+        }
+        
+        &__title {
+            font-size: 13px;
+        }
+
+        &__footer{
+            .col-sm-3{
+                width: 30% !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .bottom1{
+        &__categories{
+            width: 100% !important;
+        }
+    }
+
+    .bottom2{
+        &__food{
+            width: 100% !important;
+        }
+    }
+}

@@ -70,6 +70,12 @@ body {
   font-size: 25px;
 }
 
+.nav__cart {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .article__section {
   margin: 0 auto;
   position: relative;
@@ -106,7 +112,7 @@ body {
 }
 
 .banner__wallpaper {
-  background: url(images/10882.png) no-repeat;
+  background: url(images/10882.png) no-repeat center center;
   background-size: cover;
   height: 366px;
 }
@@ -349,6 +355,10 @@ body {
   background: #F4F9FF;
   padding: 5px 7px;
   display: block;
+}
+
+.bottom2__footer .col-sm-3 {
+  padding: 0 !important;
 }
 
 .bottom3__text {

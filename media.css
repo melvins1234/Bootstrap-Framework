@@ -1,1 +1,107 @@
-/* No CSS *//*# sourceMappingURL=media.css.map */
+@media screen and (max-width: 1199px) {
+  .bottom2__card {
+    height: 275px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav__menu--active:after, .nav__menu:not(:last-child):hover:after {
+    bottom: 0 !important;
+  }
+  .nav__cart {
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+  }
+  .banner__content {
+    margin-left: 55px;
+  }
+  .bottom1__flex {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  .bottom1__categories {
+    width: 30% !important;
+    margin-bottom: 10px !important;
+  }
+  .bottom2__row {
+    display: block !important;
+    text-align: center;
+  }
+  .bottom2__food {
+    display: inline-block;
+    width: 49% !important;
+    text-align: left;
+  }
+  .bottom2__card {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav__logo {
+    font-size: 19px !important;
+  }
+  .nav__cart {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
+  }
+  .nav .border-bottom {
+    border-bottom: 0 !important;
+  }
+  .nav .border-end {
+    border: 0 !important;
+  }
+  .nav__menu {
+    margin-bottom: 5px !important;
+  }
+  .nav__menu:last-child {
+    padding: 0 !important;
+  }
+  .nav__cart {
+    margin-top: 10px !important;
+  }
+  .banner__content {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0 10px;
+  }
+  .banner__content h1 {
+    font-size: 28px;
+    line-height: 46px;
+  }
+  .banner__market {
+    margin-bottom: 5px;
+  }
+  .middle .col-md-5 {
+    margin-top: 10px;
+  }
+  .bottom1__categories {
+    width: 46% !important;
+    margin-bottom: 10px !important;
+  }
+  .bottom1__categories--icon {
+    padding-left: 50px;
+  }
+  .bottom2__card {
+    height: 240px;
+  }
+  .bottom2__title {
+    font-size: 13px;
+  }
+  .bottom2__footer .col-sm-3 {
+    width: 30% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bottom1__categories {
+    width: 100% !important;
+  }
+  .bottom2__food {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=media.css.map */
